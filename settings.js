@@ -3,6 +3,7 @@ const settings = {
     "host": "127.0.0.1", // or "localhost", "your.ip.address.here"
     "port": 55916, // set to -1 to automatically scan for open ports
     "auth": "offline", // or "microsoft"
+    "overseer": false, // true: run under the mindcraft-overseer control plane instead of the mindserver. see OVERSEER.md
 
     // the mindserver manages all agents and hosts the UI
     "mindserver_port": 8080,

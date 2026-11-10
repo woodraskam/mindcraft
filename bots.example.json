@@ -1,0 +1,81 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 25565,
+    "version": "1.21.11"
+  },
+  "cadence": {},
+  "bots": [
+    {
+      "username": "Lodge_1",
+      "viewDistance": "tiny",
+      "role": "worker"
+    },
+    {
+      "username": "Lodge_2",
+      "viewDistance": "tiny",
+      "role": "worker"
+    },
+    {
+      "username": "Lodge_3",
+      "viewDistance": "tiny",
+      "role": "worker"
+    },
+    {
+      "username": "Gloom_1",
+      "viewDistance": "tiny",
+      "role": "worker"
+    },
+    {
+      "username": "Gloom_2",
+      "viewDistance": "tiny",
+      "role": "worker"
+    },
+    {
+      "username": "Gloom_3",
+      "viewDistance": "tiny",
+      "role": "worker"
+    },
+    {
+      "username": "Avengineers_1",
+      "viewDistance": "tiny",
+      "role": "worker"
+    },
+    {
+      "username": "Avengineers_2",
+      "viewDistance": "tiny",
+      "role": "worker"
+    },
+    {
+      "username": "Avengineers_3",
+      "viewDistance": "tiny",
+      "role": "worker"
+    },
+    {
+      "username": "Hex_1",
+      "viewDistance": "tiny",
+      "role": "worker"
+    },
+    {
+      "username": "Hex_2",
+      "viewDistance": "tiny",
+      "role": "worker"
+    },
+    {
+      "username": "Hex_3",
+      "viewDistance": "tiny",
+      "role": "worker"
+    }
+  ],
+  "mindcraft": {
+    "profile": "./andy.json",
+    "settings": {
+      "base_profile": "survival",
+      "allow_insecure_coding": false
+    },
+    "brief": {
+      "maxTurns": 12,
+      "maxMinutes": 10
+    }
+  }
+}

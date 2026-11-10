@@ -70,6 +70,10 @@ if (process.env.SETTINGS_JSON) {
     }
 }
 
+// Overseer mode (off by default): the overseer's fleet launcher runs the agents instead. See OVERSEER.md.
+if (settings.overseer) {
+    await (await import('./src/overseer/main.js')).runOverseer(settings);
+}
 
 Mindcraft.init(false, settings.mindserver_port, settings.auto_open_ui);
 

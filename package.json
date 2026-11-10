@@ -42,8 +42,10 @@
       "gl": "^8.1.6"
     },
     "scripts": {
-        "postinstall": "patch-package",
+        "postinstall": "patch-package && node src/overseer/link.js --if-present",
         "start": "node main.js",
+        "overseer:link": "node src/overseer/link.js",
+        "test:overseer": "node --test --test-concurrency=1 \"src/overseer/test/*.test.js\"",
         "reinstall": "npm run clean:modules && npm install",
         "clean:modules": "node -e \"const fs=require('fs');const p=require('path');['node_modules','package-lock.json'].forEach(f=>{if(fs.existsSync(f)){if(fs.lstatSync(f).isDirectory()){fs.rmSync(f,{recursive:true,force:true});}else{fs.unlinkSync(f);}}});\""
     },

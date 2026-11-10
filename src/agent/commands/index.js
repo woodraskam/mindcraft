@@ -14,6 +14,16 @@ export function getCommand(name) {
     return commandMap[name];
 }
 
+// Add (or replace) commands defined outside this folder; src/overseer/ adds its skill commands this way.
+export function registerCommands(commands) {
+    for (let command of commands) {
+        const i = commandList.findIndex(c => c.name === command.name);
+        if (i >= 0) commandList[i] = command;
+        else commandList.push(command);
+        commandMap[command.name] = command;
+    }
+}
+
 export function blacklistCommands(commands) {
     const unblockable = ['!stop', '!stats', '!inventory', '!goal'];
     for (let command_name of commands) {
